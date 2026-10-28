@@ -1,0 +1,69 @@
+body{
+    background-color:yellow ;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.parent{
+    border-radius:10px ;
+    justify-content: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    overflow: hidden;
+    flex-direction: column;
+    gap: 20px;
+    background-color: blue;
+}
+.header{
+    width: 100%;
+background-color: brown;
+display: flex;
+justify-content: space-between;
+align-items: center;
+} 
+
+img{
+    border-radius: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+input{
+    width: auto;
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+}
+
+button{
+    width: 60px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+    transition: all 1s ease;
+
+}
+button:hover {
+    background-color: black;
+    color: aqua;
+}
+i{
+    cursor: pointer;
+}
+
+body:has(#close:checked) .parent {
+    display :none;
+}
+
+#close{
+    display: none;
+}
+
+body:has(#close:checked)  #close {
+    display :block;
+}
